@@ -5,21 +5,21 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="description" content="Đặng Thị Minh Ngọc’s portfolio of business analysis, functional testing and AI-assisted prototyping.">
 <title>Minh Ngọc · Business Analyst Portfolio</title>
-<link rel="stylesheet" href="style.css?v=20261112-2">
-<script src="portfolio.js" defer></script>
+<link rel="stylesheet" href="style.css?v=20261112-3">
+<script src="portfolio.js?v=20261112-3" defer></script>
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
-<header class="shell nav"><a class="wordmark" href="#">minh ngọc<span>.</span></a><nav aria-label="Main"><a href="#experience">Experience</a><a href="#work">Projects</a><a href="#academic">Academic</a></nav></header>
+<header class="shell nav"><a class="wordmark" href="#">minh ngọc<span>.</span></a><nav aria-label="Main"><a href="#experience">Experience</a><a href="#personal">Personal projects</a><a href="#academic">Academic</a></nav></header>
 <main id="main">
 <section class="shell hero">
   <div><p class="eyebrow">Junior Business Analyst · Functional Testing</p><h1>Đặng Thị<br>Minh Ngọc<span>.</span></h1>
   <p class="intro">I turn product requirements into clear rules, then check how those rules work in real user flows.</p>
   <div class="actions"><a class="button" href="#work">Explore my work ↓</a></div></div>
-  <figure class="hero-photo"><img src="portrait-ngoc.jpg" alt="Portrait of Đặng Thị Minh Ngọc" width="650" height="810"><figcaption>Ho Chi Minh City, Vietnam</figcaption></figure>
+  <figure class="hero-photo"><img src="portrait-ngoc.jpg" alt="Portrait of Đặng Thị Minh Ngọc" width="648" height="810"></figure>
 </section>
 <section class="shell timeline-section" id="experience">
-  <div class="section-title"><h2>Work timeline</h2></div>
+  <div class="section-title"><h2>Professional experience</h2></div>
   <ol class="timeline">
     <li><time>Dec 2025 - Nov 2026</time><div><h3>Business Analyst · EastPlayers</h3><p>Documented grading, feedback and onboarding rules. Tested Lilo Land learning flows and reported issues in answer inputs, content display and progress tracking.</p></div></li>
     <li><time>Aug 2025 - Oct 2025</time><div><h3>Business Analyst Intern · EastPlayers</h3><p>Mapped subscription flows and payment exceptions under BA mentorship. Reviewed Figma screens and maintained requirements in Confluence.</p></div></li>
@@ -28,7 +28,7 @@
   </ol>
 </section>
 <section class="shell work" id="work">
-  <div class="section-title"><h2>Selected work</h2><p>Requirements, test scenarios and playable prototypes.</p></div>
+  <div class="section-title"><h2>Product case studies</h2></div>
   <article class="case lilac" id="lilo">
     <div class="case-copy"><p class="eyebrow">Lilo Land · EdTech</p><h3>How close is a correct answer?</h3><p>I specified submission states, numeric limits and tolerance-based grading. I also tested learning flows and logged defects in answer inputs, content display and progress tracking.</p>
     <a class="text-link product-link" href="https://liloland.ai/">Visit Lilo Land ↗</a><details><summary>View sample test scenarios</summary><table><thead><tr><th scope="col">Input</th><th scope="col">Expected result</th></tr></thead><tbody><tr><td>3.25</td><td>Accepted at the upper boundary</td></tr><tr><td>3.26</td><td>Outside the allowed range</td></tr><tr><td>Empty</td><td>Prompt to enter a number</td></tr></tbody></table></details></div>
@@ -39,23 +39,79 @@
     <div class="case-copy"><p class="eyebrow">Ant Sourcing · SaaS</p><h3>Who can invite a teammate?</h3><p>I documented workspace roles, invitation rules, plan-based seat limits and what happens when a workspace moves to a smaller plan.</p><details><summary>View requirements and edge cases</summary><ul><li>Define which roles can invite members.</li><li>Check the seat limit before allowing an invitation.</li><li>Describe the effect of a lower limit when a plan changes.</li></ul></details></div>
     <div class="sample"><span class="tag">Illustrative demo</span><h4>Try the invitation rule</h4><p>Example policy: owners can invite when a seat is available.</p><div class="fields"><label>Role<select id="role"><option>Owner</option><option>Member</option></select></label><label>Available seats<select id="seats"><option>1</option><option>0</option></select></label></div><p id="invite-result" role="status">Invitation allowed.</p></div>
   </article>
+  <article class="case pebbles" id="pebbles">
+    <div class="case-copy"><p class="eyebrow">Pebbles · Family care booking</p>
+      <h3>A consistent calendar across booking flows</h3>
+      <p>Pebbles is a platform for booking family care services, with an initial focus on mothers and babies. I found that the calendar interface differed across on-demand booking, calendar booking and booking history.</p>
+      <p>I proposed a consistent calendar interface to make the flows easier to use. I documented the requirements based on input from the senior BA and discussed them with developers and QC.</p>
+      <a class="text-link product-link" href="https://www.pebbles.vn/">Visit Pebbles ↗</a>
+    </div>
+    <div class="sample pebbles-scope"><h4>Booking flows in scope</h4><ul><li>On-demand booking</li><li>Calendar booking</li><li>Booking history</li></ul><p>Proposed improvement: a consistent calendar interface.</p></div>
+  </article>
+</section>
+<section class="shell personal" id="personal">
+  <div class="section-title"><h2>Personal projects</h2><p>Livestream game prototypes built with Codex</p></div>
+  <div class="personal-grid">
   <article class="case peach" id="game">
-    <div class="case-copy"><p class="eyebrow">Kẹt Xe Live · Personal project</p><h3>A game the audience can steer</h3><p>I defined gameplay rules and viewer interactions for this livestream prototype and used Codex to build it. In the demo, simulated comments, likes and gifts can change what happens on the road.</p><a class="button" href="ket-xe-live.html">Play the Vietnamese demo ↗</a></div>
-    <a class="game-shot" href="ket-xe-live.html" aria-label="Play Kẹt Xe Live"><img src="ket-xe-live.webp" alt="Kẹt Xe Live prototype with a crowded city road and viewer controls" width="650" height="400" loading="lazy"></a>
+    <a class="game-shot traffic-shot" href="ket-xe-live.html" aria-label="Play Kẹt Xe Live"><img src="ket-xe-preview-road.png" alt="An early prototype of Kẹt Xe Live showing cars at an intersection" width="609" height="1049" loading="lazy"></a>
+    <div class="case-copy"><h3>Kẹt Xe Live</h3><p>I defined the traffic rules and how simulated comments, likes and gifts affect gameplay.</p><a class="button" href="ket-xe-live.html">Play Kẹt Xe Live ↗</a></div>
   </article>
   <article class="case coral" id="tet">
-    <div class="case-copy"><p class="eyebrow">Dọn nhà đón Tết · Personal project</p><h3>One house, two teams</h3><p>I defined three cleaning stages and the rules that turn comments, likes and gifts into actions. I used Codex to prototype the game and review simulated rounds.</p><a class="button" href="don-nha-don-tet.html">Play the Vietnamese demo ↗</a></div>
-    <a class="game-shot" href="don-nha-don-tet.html" aria-label="Play Dọn nhà đón Tết"><img src="don-nha-don-tet.webp" alt="Dọn nhà đón Tết game preview" loading="lazy"></a>
+    <a class="game-shot tet-shot" href="don-nha-don-tet.html" aria-label="Play Dọn nhà đón Tết"><img src="don-nha-don-tet.webp" alt="Dọn nhà đón Tết game preview" loading="lazy"></a>
+    <div class="case-copy"><h3>Dọn nhà đón Tết</h3><p>I defined three cleaning stages and the rules that turn viewer interactions into actions for two teams.</p><a class="button" href="don-nha-don-tet.html">Play Dọn nhà đón Tết ↗</a></div>
   </article>
+  </div>
 </section>
 <section class="shell academic" id="academic">
   <div class="section-title"><h2>Academic projects</h2><p>University of Economics Ho Chi Minh City</p></div>
   <div class="academic-grid">
-    <article><time>May - Jun 2025</time><h3>Web-based Vocabulary Game</h3><p>Documented game rules, player profiles and admin functions. Collaborated on Figma screens and basic HTML/CSS.</p></article>
-    <article><time>Feb - Mar 2025</time><h3>ERP Process Design: MISA AMIS</h3><p>Mapped purchasing and warehouse dispatch and proposed revised processes for a coffee retail chain.</p></article>
-    <article><time>Sep - Nov 2024</time><h3>StudyCircle</h3><p>Helped define features, researched algorithms and built a preliminary WordPress interface for a student collaboration app.</p></article>
-    <article><time>Feb - Mar 2024</time><h3>Milano: Product and staff management</h3><p>Analysed workflows and modelled proposed changes with BPMN for a fictional company.</p></article>
+    <article class="flashcard" id="academic-engjoy">
+      <button type="button" class="flash-front" aria-expanded="false" aria-controls="back-engjoy" aria-label="Show details for EngJoy: Web-based Vocabulary Game">
+        <time>May - Jun 2025</time><span class="flash-title">EngJoy: Web-based Vocabulary Game</span><span class="flip-label">View details ↻</span>
+      </button>
+      <div class="flash-back" id="back-engjoy" hidden>
+        <h3>EngJoy: Web-based Vocabulary Game</h3><p>Documented game rules, player profiles and admin functions. Collaborated on Figma screens and basic HTML/CSS.</p>
+        <div class="flash-actions"><a href="https://docs.google.com/document/d/1dNjX5v_rsX0HrX28JHPw7jKJvVsQjru3HHD4b1sFQSo/view" class="text-link">View project report ↗</a><button type="button" class="flash-return" aria-label="Back to EngJoy: Web-based Vocabulary Game card">Back ↺</button></div>
+      </div>
+    </article>
+    <article class="flashcard" id="academic-erp">
+      <button type="button" class="flash-front" aria-expanded="false" aria-controls="back-erp" aria-label="Show details for ERP Process Design: MISA AMIS">
+        <time>Feb - Mar 2025</time><span class="flash-title">ERP Process Design: MISA AMIS</span><span class="flip-label">View details ↻</span>
+      </button>
+      <div class="flash-back" id="back-erp" hidden>
+        <h3>ERP Process Design: MISA AMIS</h3><p>Mapped purchasing and warehouse dispatch and proposed revised processes for a coffee retail chain.</p>
+        <div class="flash-actions"><button type="button" class="flash-return" aria-label="Back to ERP Process Design: MISA AMIS card">Back ↺</button></div>
+      </div>
+    </article>
+    <article class="flashcard" id="academic-study">
+      <button type="button" class="flash-front" aria-expanded="false" aria-controls="back-study" aria-label="Show details for StudyCircle">
+        <time>Sep - Nov 2024</time><span class="flash-title">StudyCircle</span><span class="flip-label">View details ↻</span>
+      </button>
+      <div class="flash-back" id="back-study" hidden>
+        <h3>StudyCircle</h3><p>Helped define features, researched algorithms and built a preliminary WordPress interface for a student collaboration app.</p>
+        <div class="flash-actions"><a href="https://docs.google.com/document/d/1-D1Rdw1nfW8jF8IKdkCRYroiP7zIFr1aZHZcARlLDfw/view" class="text-link">View project report ↗</a><button type="button" class="flash-return" aria-label="Back to StudyCircle card">Back ↺</button></div>
+      </div>
+    </article>
+    <article class="flashcard" id="academic-architecture">
+      <button type="button" class="flash-front" aria-expanded="false" aria-controls="back-architecture" aria-label="Show details for Purchasing System Architecture">
+        <time>Oct - Nov 2024</time><span class="flash-title">Purchasing System Architecture</span><span class="flip-label">View details ↻</span>
+      </button>
+      <div class="flash-back" id="back-architecture" hidden>
+        <h3>Purchasing System Architecture</h3><p>Team project on purchasing operations at Vinut. Mapped purchasing processes and designed functions, an entity relationship diagram and a database schema.</p>
+        <div class="flash-actions"><a href="https://docs.google.com/document/d/1ZrGFgz8jDuLn7YAg0ONEC8E73c12IkRY_nWudSZBiCc/view" class="text-link">View project report ↗</a><button type="button" class="flash-return" aria-label="Back to Purchasing System Architecture card">Back ↺</button></div>
+      </div>
+    </article>
+    <article class="flashcard" id="academic-milano">
+      <button type="button" class="flash-front" aria-expanded="false" aria-controls="back-milano" aria-label="Show details for Milano: Product and staff management">
+        <time>Feb - Mar 2024</time><span class="flash-title">Milano: Product and staff management</span><span class="flip-label">View details ↻</span>
+      </button>
+      <div class="flash-back" id="back-milano" hidden>
+        <h3>Milano: Product and staff management</h3><p>Analysed workflows and modelled proposed changes with BPMN for a fictional company.</p>
+        <div class="flash-actions"><button type="button" class="flash-return" aria-label="Back to Milano: Product and staff management card">Back ↺</button></div>
+      </div>
+    </article>
   </div>
+  <a class="text-link academic-folder" href="https://drive.google.com/drive/folders/10Fy2Ztb4IAfSUPyuUKU3ZJGUGBZJPNnF">Browse the academic project folder ↗</a>
 </section>
 <section class="shell skills" id="skills"><h2>How I work</h2><div class="skills-grid"><div><h3>Business analysis</h3><p>User stories, business rules, process diagrams and prototype review.</p></div><div><h3>Functional testing</h3><p>Workflow testing, input validation, exception scenarios and defect reporting.</p></div><div><h3>AI-assisted work</h3><p>ChatGPT and Codex for prompt writing, requirements drafts and prototyping. I review the output against the requirements.</p></div></div></section>
 </main>

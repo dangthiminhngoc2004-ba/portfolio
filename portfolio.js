@@ -25,3 +25,20 @@ function updateInvitation() {
 }
 role.addEventListener('change', updateInvitation);
 seats.addEventListener('change', updateInvitation);
+
+document.querySelectorAll('.flashcard').forEach((card) => {
+  const front = card.querySelector('.flash-front');
+  const back = card.querySelector('.flash-back');
+  const backButton = card.querySelector('.flash-return');
+  function showBack(open) {
+    front.hidden = open;
+    front.setAttribute('aria-expanded', String(open));
+    back.hidden = !open;
+    (open ? backButton : front).focus({preventScroll: true});
+  }
+  front.addEventListener('click', () => showBack(true));
+  backButton.addEventListener('click', () => showBack(false));
+  back.addEventListener('keydown', (event) => {
+    if (event.key === 'Escape') showBack(false);
+  });
+});
