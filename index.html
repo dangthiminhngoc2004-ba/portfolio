@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="description" content="Đặng Thị Minh Ngọc’s portfolio of business analysis, functional testing and AI-assisted prototyping.">
 <title>Minh Ngọc · Business Analyst Portfolio</title>
-<link rel="stylesheet" href="style.css?v=20261112-4">
+<link rel="stylesheet" href="style.css?v=20261112-5">
 <script src="portfolio.js?v=20261112-4" defer></script>
 </head>
 <body>
@@ -37,7 +37,7 @@
   </section>
   <nav class="shell quicklinks" aria-label="Product projects" data-vi-aria-label="Các dự án công việc">
     <a href="#pebbles"><strong>Pebbles</strong><span data-vi="Lịch đặt dịch vụ">Booking calendar</span><i aria-hidden="true">↗</i></a>
-    <a href="#lilo"><strong>Lilo Land</strong><span data-vi="Chấm điểm và kiểm thử">Grading and testing</span><i aria-hidden="true">↗</i></a>
+    <a href="#lilo"><strong>Lilo Land</strong><span data-vi="LMS Admin và luồng học">LMS Admin and learning flows</span><i aria-hidden="true">↗</i></a>
     <a href="#ant"><strong>Ant Sourcing</strong><span data-vi="Quyền trong không gian làm việc">Workspace access</span><i aria-hidden="true">↗</i></a>
   </nav>
 
@@ -68,13 +68,18 @@
       <article class="case lilac" id="lilo">
         <div class="case-copy">
           <p data-vi="Lilo Land · Công nghệ giáo dục" class="eyebrow">Lilo Land · EdTech</p>
-          <h3 data-vi="Gần đúng đến mức nào thì được chấp nhận?">How close is a correct answer?</h3>
-          <p data-vi="Mình mô tả trạng thái nộp bài, giới hạn giá trị và cách chấm theo sai số. Mình kiểm thử luồng học và ghi nhận lỗi nhập đáp án, hiển thị nội dung và theo dõi tiến độ.">I specified submission states, numeric limits and tolerance-based grading. I tested learning flows and logged defects in answer inputs, content display and progress tracking.</p>
+          <h3 data-vi="Từ LMS Admin đến trải nghiệm người học">From LMS Admin to the learner experience</h3>
+          <p data-vi="Mình phân tích luồng soạn câu hỏi, các dạng trả lời và luồng học trên nền tảng học Toán Lilo Land.">I worked across question authoring, answer formats and learning flows for Lilo Land, a gamified maths platform.</p>
+          <ul class="lilo-scope">
+          <li><strong data-vi="Prototype LMS Admin">LMS Admin prototype</strong><p data-vi="Mình dùng Codex dựng bản mẫu Question Builder để cấu hình đáp án và xem trước giao diện học viên. Sau khi thử luồng, mình ghi lại các điểm cần sửa và trao đổi với team.">I used Codex to build a Question Builder prototype with answer configuration and a learner preview. I tried the flows and recorded changes for team review.</p></li>
+          <li><strong data-vi="Dạng trả lời và ngân hàng câu hỏi">Answer types and question bank</strong><p data-vi="Mình mô tả cách cấu hình, kiểm tra và xuất bản câu hỏi với nhiều dạng trả lời: chọn một hoặc nhiều, nhập chữ hoặc số, thanh trượt, sắp xếp và trả lời bằng đồng hồ.">I documented configuration, validation and publishing states for multiple formats, including single and multiple selection, text and numeric input, sliders, ordering and clock-based answers.</p></li>
+          <li><strong data-vi="Luồng học và phản hồi">Learning flows and feedback</strong><p data-vi="Mình kiểm thử luồng học, ghi nhận lỗi và viết tài liệu báo lỗi cho câu hỏi, bài học và phản hồi AI. Mình cũng rà độ chính xác của nội dung Toán do AI tạo.">I tested learning flows, logged defects and documented reporting for questions, lessons and AI responses. I also reviewed AI-generated maths content.</p></li>
+          </ul>
           <a data-vi="Xem Lilo Land ↗" href="https://liloland.ai/" class="text-link">Visit Lilo Land ↗</a>
         </div>
         <div class="sample">
           <p data-vi="Bản minh họa" class="eyebrow">Illustrative demo</p>
-          <h4 data-vi="Thử chấm một đáp án">Try grading an answer</h4>
+          <h4 data-vi="Một ví dụ: Chấm đáp án số">One example: grading a numeric answer</h4>
           <p data-vi="Đáp án đúng: 3.00 · Sai số cho phép: ±0.25">Expected answer: 3.00 · Tolerance: ±0.25</p>
           <form id="grade">
             <label data-vi="Đáp án của người học" for="answer">Learner’s answer</label>
