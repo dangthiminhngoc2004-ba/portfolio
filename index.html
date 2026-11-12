@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Đặng Thị Minh Ngọc’s portfolio of business analysis, functional testing and AI-assisted prototyping.">
+<title>Minh Ngọc · Business Analyst Portfolio</title>
+<link rel="stylesheet" href="style.css">
+<script src="portfolio.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="shell nav"><a class="wordmark" href="#">minh ngọc<span>.</span></a><nav aria-label="Main"><a href="#work">Work</a><a href="#skills">Skills</a></nav></header>
+<main id="main">
+<section class="shell hero">
+  <div><p class="eyebrow">Junior Business Analyst · Functional Testing</p><h1>Đặng Thị<br>Minh Ngọc<span>.</span></h1>
+  <p class="intro">I turn product requirements into clear rules, then check how those rules work in real user flows.</p>
+  <div class="actions"><a class="button" href="#work">Explore my work ↓</a></div></div>
+  <div class="hero-card" aria-label="A sample product workflow">
+    <p class="eyebrow">Product workflow</p>
+    <p><span>01</span> Define the rule</p>
+    <p><span>02</span> Test the edge cases</p>
+    <p><span>03</span> Record what happened</p>
+  </div>
+</section>
+<section class="shell work" id="work">
+  <div class="section-title"><h2>Selected work</h2><p>Requirements, test scenarios and a playable prototype.</p></div>
+  <article class="case lilac" id="lilo">
+    <div class="case-copy"><p class="eyebrow">Lilo Land · EdTech</p><h3>How close is a correct answer?</h3><p>I specified submission states, numeric limits and tolerance-based grading. I also tested learning flows and logged defects in answer inputs, content display and progress tracking.</p>
+    <details><summary>View sample test scenarios</summary><table><thead><tr><th scope="col">Input</th><th scope="col">Expected result</th></tr></thead><tbody><tr><td>3.25</td><td>Accepted at the upper boundary</td></tr><tr><td>3.26</td><td>Outside the allowed range</td></tr><tr><td>Empty</td><td>Prompt to enter a number</td></tr></tbody></table></details></div>
+    <div class="sample"><span class="tag">Illustrative demo</span><h4>Try grading an answer</h4><p>Expected answer <strong>3.00</strong> · tolerance <strong>±0.25</strong></p>
+    <form id="grade"><label for="answer">Learner’s answer</label><div class="row"><input id="answer" type="number" step="any" placeholder="e.g. 3.25"><button>Check</button></div></form><p id="grade-result" role="status">Enter a number to check the grading rule.</p></div>
+  </article>
+  <article class="case mint" id="ant">
+    <div class="case-copy"><p class="eyebrow">Ant Sourcing · SaaS</p><h3>Who can invite a teammate?</h3><p>I documented workspace roles, invitation rules, plan-based seat limits and what happens when a workspace moves to a smaller plan.</p><details><summary>View requirements and edge cases</summary><ul><li>Define which roles can invite members.</li><li>Check the seat limit before allowing an invitation.</li><li>Describe the effect of a lower limit when a plan changes.</li></ul></details></div>
+    <div class="sample"><span class="tag">Illustrative demo</span><h4>Try the invitation rule</h4><p>Example policy: owners can invite when a seat is available.</p><div class="fields"><label>Role<select id="role"><option>Owner</option><option>Member</option></select></label><label>Available seats<select id="seats"><option>1</option><option>0</option></select></label></div><p id="invite-result" role="status">Invitation allowed.</p></div>
+  </article>
+  <article class="case peach" id="game">
+    <div class="case-copy"><p class="eyebrow">Kẹt Xe Live · Personal project</p><h3>A game the audience can steer</h3><p>I defined gameplay rules and viewer interactions for this livestream prototype and used Codex to build it. In the demo, simulated comments, likes and gifts can change what happens on the road.</p><a class="button" href="ket-xe-live.html">Play the Vietnamese demo ↗</a></div>
+    <a class="game-shot" href="ket-xe-live.html" aria-label="Play Kẹt Xe Live"><img src="ket-xe-live.webp" alt="Kẹt Xe Live prototype with a crowded city road and viewer controls" width="650" height="400" loading="lazy"></a>
+  </article>
+</section>
+<section class="shell skills" id="skills"><h2>How I work</h2><div class="skills-grid"><div><h3>Business analysis</h3><p>User stories, business rules, process diagrams and prototype review.</p></div><div><h3>Functional testing</h3><p>Workflow testing, input validation, exception scenarios and defect reporting.</p></div><div><h3>AI-assisted work</h3><p>ChatGPT and Codex for prompt writing, requirements drafts and prototyping. I review the output against the requirements.</p></div></div></section>
+</main>
+<footer class="shell footer"><span>Đặng Thị Minh Ngọc</span><a class="text-link" href="#main">Back to top ↑</a></footer>
+</body></html>
