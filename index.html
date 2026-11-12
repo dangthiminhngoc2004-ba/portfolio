@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="description" content="Đặng Thị Minh Ngọc’s portfolio of business analysis, functional testing and AI-assisted prototyping.">
 <title>Minh Ngọc · Business Analyst Portfolio</title>
-<link rel="stylesheet" href="style.css?v=20261112-6">
+<link rel="stylesheet" href="style.css?v=20261112-7">
 <script src="portfolio.js?v=20261112-4" defer></script>
 </head>
 <body>
@@ -68,7 +68,7 @@
       <article class="case lilac" id="lilo">
         <div class="case-copy">
           <p data-vi="Lilo Land · Công nghệ giáo dục" class="eyebrow">Lilo Land · EdTech</p>
-          <h3 data-vi="LMS Admin và luồng học">LMS Admin and learning flows</h3>
+          <h3 data-vi="LMS Admin và luồng học">LMS Admin &amp; learning</h3>
           <p data-vi="Mình dựng prototype soạn câu hỏi, đặc tả nhiều dạng trả lời và kiểm thử luồng học.">I prototyped question authoring, specified answer formats and tested learning flows.</p>
         </div>
         <div class="sample">
@@ -80,11 +80,7 @@
             <div class="row"><input id="answer" type="number" step="any" placeholder="e.g. 3.25" data-vi-placeholder="Ví dụ: 3.25"><button data-vi="Kiểm tra" type="submit">Check</button></div>
           </form>
           <p id="grade-result" role="status"></p>
-          <details><summary data-vi="Xem tình huống kiểm thử mẫu">View sample test scenarios</summary>
-            <table><thead><tr><th data-vi="Đầu vào" scope="col">Input</th><th data-vi="Kết quả mong đợi" scope="col">Expected result</th></tr></thead>
-              <tbody><tr><td>3.25</td><td data-vi="Chấp nhận ở ngưỡng trên">Accepted at the upper boundary</td></tr><tr><td>3.26</td><td data-vi="Vượt khoảng cho phép">Outside the allowed range</td></tr><tr><td data-vi="Để trống">Empty</td><td data-vi="Nhắc nhập số">Prompt to enter a number</td></tr></tbody>
-            </table>
-          </details>
+
         </div>
         <details class="case-more">
           <summary data-vi="Xem chi tiết dự án">Project details</summary>
@@ -94,6 +90,11 @@
             <li><strong data-vi="Luồng học và phản hồi">Learning flows and feedback</strong><p data-vi="Mình kiểm thử luồng học, ghi nhận lỗi và viết tài liệu báo lỗi cho câu hỏi, bài học và phản hồi AI. Mình cũng rà độ chính xác của nội dung Toán do AI tạo.">I tested learning flows, logged defects and documented reporting for questions, lessons and AI responses. I also reviewed AI-generated maths content.</p></li>
             </ul>
             <a data-vi="Xem Lilo Land ↗" href="https://liloland.ai/" class="text-link">Visit Lilo Land ↗</a>
+          <details><summary data-vi="Xem tình huống kiểm thử mẫu">View sample test scenarios</summary>
+            <table><thead><tr><th data-vi="Đầu vào" scope="col">Input</th><th data-vi="Kết quả mong đợi" scope="col">Expected result</th></tr></thead>
+              <tbody><tr><td>3.25</td><td data-vi="Chấp nhận ở ngưỡng trên">Accepted at the upper boundary</td></tr><tr><td>3.26</td><td data-vi="Vượt khoảng cho phép">Outside the allowed range</td></tr><tr><td data-vi="Để trống">Empty</td><td data-vi="Nhắc nhập số">Prompt to enter a number</td></tr></tbody>
+            </table>
+          </details>
         </details>
       </article>
       <article class="case mint" id="ant">
@@ -105,7 +106,7 @@
         <div class="sample">
           <p data-vi="Bản minh họa" class="eyebrow">Illustrative demo</p>
           <h4 data-vi="Thử quy tắc mời thành viên">Try the invitation rule</h4>
-          <p data-vi="Quy tắc minh họa: chủ không gian làm việc có thể mời khi còn chỗ.">Example policy: owners can invite when a seat is available.</p>
+          <p data-vi="Chủ không gian có thể mời khi còn chỗ.">Owners can invite when a seat is free.</p>
           <div class="fields">
             <div><label data-vi="Vai trò" for="role">Role</label><select id="role"><option data-vi="Chủ không gian" value="owner">Owner</option><option data-vi="Thành viên" value="member">Member</option></select></div>
             <div><label data-vi="Số chỗ còn lại" for="seats">Available seats</label><select id="seats"><option value="1">1</option><option value="0">0</option></select></div>

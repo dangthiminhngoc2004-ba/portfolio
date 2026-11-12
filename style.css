@@ -173,3 +173,7 @@ th,td{padding:4px;border-bottom:1px solid #d6dfd2}
 @media(min-width:591px) and (max-width:760px){
   .work-grid{grid-template-columns:1fr}
 }
+@media(min-width:761px) and (max-width:950px){
+  .work-grid .case-copy{min-block-size:145px}
+  .work-grid .sample > p:not(.eyebrow):not([role]){min-block-size:2.7em}
+}
