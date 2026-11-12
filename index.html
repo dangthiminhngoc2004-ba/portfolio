@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="description" content="Đặng Thị Minh Ngọc’s portfolio of business analysis, functional testing and AI-assisted prototyping.">
 <title>Minh Ngọc · Business Analyst Portfolio</title>
-<link rel="stylesheet" href="style.css?v=20261112-5">
+<link rel="stylesheet" href="style.css?v=20261112-6">
 <script src="portfolio.js?v=20261112-4" defer></script>
 </head>
 <body>
@@ -68,18 +68,12 @@
       <article class="case lilac" id="lilo">
         <div class="case-copy">
           <p data-vi="Lilo Land · Công nghệ giáo dục" class="eyebrow">Lilo Land · EdTech</p>
-          <h3 data-vi="Từ LMS Admin đến trải nghiệm người học">From LMS Admin to the learner experience</h3>
-          <p data-vi="Mình phân tích luồng soạn câu hỏi, các dạng trả lời và luồng học trên nền tảng học Toán Lilo Land.">I worked across question authoring, answer formats and learning flows for Lilo Land, a gamified maths platform.</p>
-          <ul class="lilo-scope">
-          <li><strong data-vi="Prototype LMS Admin">LMS Admin prototype</strong><p data-vi="Mình dùng Codex dựng bản mẫu Question Builder để cấu hình đáp án và xem trước giao diện học viên. Sau khi thử luồng, mình ghi lại các điểm cần sửa và trao đổi với team.">I used Codex to build a Question Builder prototype with answer configuration and a learner preview. I tried the flows and recorded changes for team review.</p></li>
-          <li><strong data-vi="Dạng trả lời và ngân hàng câu hỏi">Answer types and question bank</strong><p data-vi="Mình mô tả cách cấu hình, kiểm tra và xuất bản câu hỏi với nhiều dạng trả lời: chọn một hoặc nhiều, nhập chữ hoặc số, thanh trượt, sắp xếp và trả lời bằng đồng hồ.">I documented configuration, validation and publishing states for multiple formats, including single and multiple selection, text and numeric input, sliders, ordering and clock-based answers.</p></li>
-          <li><strong data-vi="Luồng học và phản hồi">Learning flows and feedback</strong><p data-vi="Mình kiểm thử luồng học, ghi nhận lỗi và viết tài liệu báo lỗi cho câu hỏi, bài học và phản hồi AI. Mình cũng rà độ chính xác của nội dung Toán do AI tạo.">I tested learning flows, logged defects and documented reporting for questions, lessons and AI responses. I also reviewed AI-generated maths content.</p></li>
-          </ul>
-          <a data-vi="Xem Lilo Land ↗" href="https://liloland.ai/" class="text-link">Visit Lilo Land ↗</a>
+          <h3 data-vi="LMS Admin và luồng học">LMS Admin and learning flows</h3>
+          <p data-vi="Mình dựng prototype soạn câu hỏi, đặc tả nhiều dạng trả lời và kiểm thử luồng học.">I prototyped question authoring, specified answer formats and tested learning flows.</p>
         </div>
         <div class="sample">
           <p data-vi="Bản minh họa" class="eyebrow">Illustrative demo</p>
-          <h4 data-vi="Một ví dụ: Chấm đáp án số">One example: grading a numeric answer</h4>
+          <h4 data-vi="Chấm đáp án số">Grade a numeric answer</h4>
           <p data-vi="Đáp án đúng: 3.00 · Sai số cho phép: ±0.25">Expected answer: 3.00 · Tolerance: ±0.25</p>
           <form id="grade">
             <label data-vi="Đáp án của người học" for="answer">Learner’s answer</label>
@@ -92,12 +86,21 @@
             </table>
           </details>
         </div>
+        <details class="case-more">
+          <summary data-vi="Xem chi tiết dự án">Project details</summary>
+            <ul class="lilo-scope">
+            <li><strong data-vi="Prototype LMS Admin">LMS Admin prototype</strong><p data-vi="Mình dùng Codex dựng bản mẫu Question Builder để cấu hình đáp án và xem trước giao diện học viên. Sau khi thử luồng, mình ghi lại các điểm cần sửa và trao đổi với team.">I used Codex to build a Question Builder prototype with answer configuration and a learner preview. I tried the flows and recorded changes for team review.</p></li>
+            <li><strong data-vi="Dạng trả lời và ngân hàng câu hỏi">Answer types and question bank</strong><p data-vi="Mình mô tả cách cấu hình, kiểm tra và xuất bản câu hỏi với nhiều dạng trả lời: chọn một hoặc nhiều, nhập chữ hoặc số, thanh trượt, sắp xếp và trả lời bằng đồng hồ.">I documented configuration, validation and publishing states for multiple formats, including single and multiple selection, text and numeric input, sliders, ordering and clock-based answers.</p></li>
+            <li><strong data-vi="Luồng học và phản hồi">Learning flows and feedback</strong><p data-vi="Mình kiểm thử luồng học, ghi nhận lỗi và viết tài liệu báo lỗi cho câu hỏi, bài học và phản hồi AI. Mình cũng rà độ chính xác của nội dung Toán do AI tạo.">I tested learning flows, logged defects and documented reporting for questions, lessons and AI responses. I also reviewed AI-generated maths content.</p></li>
+            </ul>
+            <a data-vi="Xem Lilo Land ↗" href="https://liloland.ai/" class="text-link">Visit Lilo Land ↗</a>
+        </details>
       </article>
       <article class="case mint" id="ant">
         <div class="case-copy">
           <p data-vi="Ant Sourcing · SaaS" class="eyebrow">Ant Sourcing · SaaS</p>
-          <h3 data-vi="Ai có quyền mời thành viên?">Who can invite a teammate?</h3>
-          <p data-vi="Mình viết tài liệu về vai trò, quyền mời thành viên, số chỗ theo gói và ảnh hưởng khi không gian làm việc hạ gói.">I documented workspace roles, invitation rules, plan-based seat limits and what happens when a workspace moves to a smaller plan.</p>
+          <h3 data-vi="Quyền mời thành viên">Workspace invitations</h3>
+          <p data-vi="Mình viết quy tắc về quyền mời thành viên và giới hạn số chỗ theo gói.">I documented invitation permissions and plan-based seat limits.</p>
         </div>
         <div class="sample">
           <p data-vi="Bản minh họa" class="eyebrow">Illustrative demo</p>
@@ -108,10 +111,12 @@
             <div><label data-vi="Số chỗ còn lại" for="seats">Available seats</label><select id="seats"><option value="1">1</option><option value="0">0</option></select></div>
           </div>
           <p id="invite-result" role="status"></p>
-          <details><summary data-vi="Xem yêu cầu và tình huống ngoại lệ">View requirements and edge cases</summary>
-            <ul><li data-vi="Xác định vai trò nào được mời thành viên.">Define which roles can invite members.</li><li data-vi="Kiểm tra số chỗ trước khi cho phép mời.">Check seat capacity before allowing an invitation.</li><li data-vi="Mô tả ảnh hưởng khi đổi gói.">Document what happens when the plan changes.</li></ul>
-          </details>
         </div>
+        <details class="case-more">
+          <summary data-vi="Xem chi tiết dự án">Project details</summary>
+          <p data-vi="Mình viết tài liệu về vai trò, quyền mời thành viên, số chỗ theo gói và ảnh hưởng khi không gian làm việc hạ gói.">I documented workspace roles, invitation rules, plan-based seat limits and what happens when a workspace moves to a smaller plan.</p>
+          <ul><li data-vi="Xác định vai trò nào được mời thành viên.">Define which roles can invite members.</li><li data-vi="Kiểm tra số chỗ trước khi cho phép mời.">Check seat capacity before allowing an invitation.</li><li data-vi="Mô tả ảnh hưởng khi đổi gói.">Document what happens when the plan changes.</li></ul>
+        </details>
       </article>
     </div>
   </section>

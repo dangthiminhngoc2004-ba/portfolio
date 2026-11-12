@@ -158,3 +158,18 @@ th,td{padding:4px;border-bottom:1px solid #d6dfd2}
 .lilo-scope li{padding:8px 10px;border-left:3px solid #937cb7;background:#ffffff8c;border-radius:0 7px 7px 0}
 .lilo-scope strong{font-size:.9rem}
 .lilo-scope p{font-size:.86rem;color:#46505a;line-height:1.5;margin-top:2px}
+
+.work-grid{align-items:start}
+.work-grid .case{gap:12px}
+.work-grid .case-copy > p:not(.eyebrow){margin-bottom:0}
+.work-grid .sample{margin-top:0}
+.case-more{margin-top:0;padding:9px 12px;border:1px solid #b8c8bd;border-radius:9px;background:#ffffff75}
+.case-more summary{font-size:.88rem}
+.case-more > p,.case-more > ul:not(.lilo-scope){font-size:.86rem;color:var(--muted);margin-top:8px}
+.case-more .lilo-scope{margin:8px 0}
+@media(min-width:761px){
+  .work-grid .case-copy{min-block-size:117px}
+}
+@media(min-width:591px) and (max-width:760px){
+  .work-grid{grid-template-columns:1fr}
+}
