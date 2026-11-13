@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="description" content="Đặng Thị Minh Ngọc’s portfolio of business analysis, functional testing and AI-assisted prototyping.">
 <title>Minh Ngọc · Business Analyst Portfolio</title>
-<link rel="stylesheet" href="style.css?v=20261113-1">
+<link rel="stylesheet" href="style.css?v=20261113-3">
 <script src="portfolio.js?v=20261112-4" defer></script>
 </head>
 <body>
@@ -28,10 +28,10 @@
 <main id="main">
   <section class="shell hero">
     <div class="hero-copy">
-      <p data-vi="Junior Business Analyst · Kiểm thử chức năng" class="eyebrow">Junior Business Analyst · Functional Testing</p>
+      <p data-vi="Business Analyst · Kiểm thử chức năng" class="eyebrow">Business Analyst · Functional Testing</p>
       <h1>Đặng Thị<br>Minh Ngọc<span>.</span></h1>
       <p data-vi="Mình chuyển yêu cầu sản phẩm thành quy tắc rõ ràng, rồi kiểm tra chúng trên luồng người dùng thực tế." class="intro">I turn product requirements into clear rules, then test them in real user flows.</p>
-      <div class="actions"><a data-vi="Xem dự án công việc ↓" href="#work" class="button">Explore product work ↓</a><a data-vi="LinkedIn ↗" href="https://www.linkedin.com/in/minhngoc2004" class="text-link">LinkedIn ↗</a></div>
+      <div class="actions"><a data-vi="Xem dự án ↓" href="#work" class="button">Explore projects ↓</a><a data-vi="Liên hệ qua LinkedIn ↗" href="https://www.linkedin.com/in/minhngoc2004" class="text-link">Contact me on LinkedIn ↗</a></div>
     </div>
     <figure class="hero-photo"><img src="portrait-ngoc.jpg" alt="Portrait of Đặng Thị Minh Ngọc" data-vi-alt="Ảnh chân dung Đặng Thị Minh Ngọc" width="648" height="810" fetchpriority="high"></figure>
   </section>
@@ -135,7 +135,13 @@
   </section>
 
   <section class="shell personal" id="personal">
-    <header class="section-head"><h2 data-vi="Dự án cá nhân">Personal projects</h2><p data-vi="Game livestream làm cùng Codex, có bản chơi thử.">Playable livestream prototypes built with Codex.</p></header>
+    <header class="section-head"><h2 data-vi="Dự án cá nhân">Personal projects</h2></header>
+    <article class="minonn-card" id="minonn">
+      <p class="eyebrow" data-vi="Dự án khóa Agent Boss">Agent Boss course project</p>
+      <h3 data-vi="Minonn · Trợ lý cá nhân trên Telegram">Minonn · Personal assistant on Telegram</h3>
+      <p data-vi="Mình làm Minonn trong khóa Agent Boss để gom việc đọc tin, ôn bài và xem lịch vào một chỗ. Minonn gửi bản tin về Business Analyst và AI, tóm tắt bài viết và tạo câu hỏi ôn tập từ tài liệu học.">I built Minonn during the Agent Boss course to keep news, study practice and calendar updates in one place. Minonn sends business analysis and AI news, summarizes articles and creates quizzes from study materials.</p>
+      <p data-vi="Mình dùng Codex để xây bot và đưa lên Cloudflare. Khi thử trên Telegram, Minonn đã gửi câu hỏi ôn tập, bản tóm tắt Gmail và lịch hẹn ngày hôm sau.">I used Codex to build the bot and deploy it on Cloudflare. In Telegram tests, Minonn delivered quiz questions, a Gmail digest and the next day’s calendar events.</p>
+    </article>
     <div class="personal-grid">
       <article class="game-card featured-game" id="dua-cham">
         <a class="game-shot slow-shot" href="dua-cham-live.html" aria-label="Try Đua Chậm Live" data-vi-aria-label="Chơi thử Đua Chậm Live"><img src="dua-cham-live.webp" alt="Animal racers on the Đua Chậm Live track" data-vi-alt="Các con vật trên đường đua Đua Chậm Live" width="540" height="960"></a>
@@ -220,9 +226,10 @@
   <section class="shell skills" id="skills">
     <header class="section-head"><h2 data-vi="Cách mình làm việc">How I work</h2></header>
     <div class="skills-grid">
-      <div><h3 data-vi="Phân tích nghiệp vụ">Business analysis</h3><p data-vi="Viết user story, quy tắc nghiệp vụ, sơ đồ quy trình và rà soát bản mẫu.">User stories, business rules, process diagrams and prototype review.</p></div>
+      <div><h3 data-vi="Làm rõ yêu cầu">Requirements clarification</h3><p data-vi="Làm rõ mục tiêu, luồng người dùng và các trường hợp ngoại lệ trước khi viết yêu cầu.">I clarify goals, user flows and exceptions before documenting requirements.</p></div>
+      <div><h3 data-vi="Viết tài liệu nghiệp vụ">Business analysis documentation</h3><p data-vi="Viết user story, quy tắc nghiệp vụ và sơ đồ quy trình.">I write user stories and business rules, and map workflows.</p></div>
       <div><h3 data-vi="Kiểm thử chức năng">Functional testing</h3><p data-vi="Kiểm thử luồng, kiểm tra dữ liệu nhập, tình huống ngoại lệ và ghi nhận lỗi.">Workflow testing, input validation, exception scenarios and defect reporting.</p></div>
-      <div><h3 data-vi="Làm việc với AI">AI-assisted work</h3><p data-vi="Dùng ChatGPT và Codex để soạn nháp yêu cầu và dựng bản mẫu. Mình đối chiếu kết quả với yêu cầu trước khi dùng.">ChatGPT and Codex for requirements drafts and prototypes. I review the output against the requirements.</p></div>
+      <div><h3 data-vi="Dùng AI để dựng bản mẫu">AI-assisted prototyping</h3><p data-vi="Dùng ChatGPT và Codex để dựng bản mẫu rồi đối chiếu kết quả với yêu cầu.">I use ChatGPT and Codex to build prototypes, then check them against the requirements.</p></div>
     </div>
   </section>
 </main>
