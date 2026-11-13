@@ -177,3 +177,12 @@ th,td{padding:4px;border-bottom:1px solid #d6dfd2}
   .work-grid .case-copy{min-block-size:145px}
   .work-grid .sample > p:not(.eyebrow):not([role]){min-block-size:2.7em}
 }
+
+.featured-game{grid-column:1/-1;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);align-items:start}
+.slow-shot{height:100%;min-height:290px;aspect-ratio:auto;background:#273f35}
+.slow-shot img{display:block;object-fit:contain;object-position:center;height:290px}
+.featured-game .game-copy{padding:20px 22px}
+.featured-game .eyebrow{margin:0 0 5px;color:var(--dark)}
+.featured-game details{font-size:.9rem}
+.featured-game li+li{margin-top:4px}
+@media(max-width:700px){.featured-game{grid-template-columns:1fr}.slow-shot{min-height:0}.slow-shot img{height:240px}}

@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="description" content="Đặng Thị Minh Ngọc’s portfolio of business analysis, functional testing and AI-assisted prototyping.">
 <title>Minh Ngọc · Business Analyst Portfolio</title>
-<link rel="stylesheet" href="style.css?v=20261112-7">
+<link rel="stylesheet" href="style.css?v=20261113-1">
 <script src="portfolio.js?v=20261112-4" defer></script>
 </head>
 <body>
@@ -137,6 +137,23 @@
   <section class="shell personal" id="personal">
     <header class="section-head"><h2 data-vi="Dự án cá nhân">Personal projects</h2><p data-vi="Game livestream làm cùng Codex, có bản chơi thử.">Playable livestream prototypes built with Codex.</p></header>
     <div class="personal-grid">
+      <article class="game-card featured-game" id="dua-cham">
+        <a class="game-shot slow-shot" href="dua-cham-live.html" aria-label="Try Đua Chậm Live" data-vi-aria-label="Chơi thử Đua Chậm Live"><img src="dua-cham-live.webp" alt="Animal racers on the Đua Chậm Live track" data-vi-alt="Các con vật trên đường đua Đua Chậm Live" width="540" height="960"></a>
+        <div class="game-copy">
+          <p class="eyebrow" data-vi="Đã phát trên TikTok LIVE">Streamed on TikTok LIVE</p>
+          <h3>Đua Chậm Live</h3>
+          <p data-vi="Mình thiết kế luật đua thú và cách khán giả dùng bình luận, tim và quà để tác động đến cuộc đua.">I designed the animal race rules and how viewers influence the race with comments, likes and gifts.</p>
+          <a class="text-link" href="dua-cham-live.html" data-vi="Chơi thử với tương tác mô phỏng ↗">Try the Vietnamese demo with simulated interactions ↗</a>
+          <details>
+            <summary data-vi="Cầu nối hoạt động thế nào?">How does the bridge work?</summary>
+            <ul>
+              <li data-vi="Cầu nối dùng tiktok-live-connector và Euler Stream để nhận sự kiện từ TikTok LIVE, rồi gửi qua WebSocket tới game trên cùng máy.">The bridge uses tiktok-live-connector and Euler Stream to receive TikTok LIVE events and forwards them to the game on the same computer over WebSocket.</li>
+              <li data-vi="Gõ “rùa” để vào phe Rùa và cổ vũ. Khi Rùa lật, gõ “lật” để giúp Rùa chạy tiếp.">Type “rùa” to join and cheer for the turtle. If it flips over, type “lật” to help it get back on the track.</li>
+              <li data-vi="Tim có thể kích hoạt tăng tốc. Cầu nối chỉ tính phần tăng thêm trong mỗi chuỗi quà. Hoa hồng cứu các con vật gặp sự cố, còn Lucky Pig gọi Heo may mắn vào ván sau.">Likes can trigger a speed boost. The bridge counts only new gifts in each streak. A Rose rescues racers in trouble, while Lucky Pig adds a racer to the next round.</li>
+            </ul>
+          </details>
+        </div>
+      </article>
       <article class="game-card" id="game">
         <a class="game-shot traffic-shot" href="ket-xe-live.html" aria-label="Play Kẹt Xe Live" data-vi-aria-label="Chơi Kẹt Xe Live"><img src="ket-xe-preview-road.png" alt="Early prototype of Kẹt Xe Live showing cars at an intersection" data-vi-alt="Bản mẫu đầu của Kẹt Xe Live với xe ở ngã tư" width="609" height="1049" loading="lazy"></a>
         <div class="game-copy"><h3>Kẹt Xe Live</h3><p data-vi="Mình thiết kế luật giao thông và cách bình luận, lượt thích, quà giả lập tác động đến trò chơi.">I defined the traffic rules and how simulated comments, likes and gifts affect gameplay.</p><a data-vi="Chơi thử ↗" href="ket-xe-live.html" class="text-link">Play demo in Vietnamese ↗</a></div>
